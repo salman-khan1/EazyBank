@@ -78,7 +78,7 @@
 				<version>3.4.0</version>
 				<configuration>
 					<to>
-						<image>isalmankhan/${project.artifactId}:s4
+						<image>isalmankhan/${project.artifactId}:s6
 
 						</image>
 					</to>

@@ -14,3 +14,24 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
+
+build:
+  version: "1.0"
+
+
+loans:
+  message: "Welcome to EazyBank loans related local APIs"
+  contactDetails:
+    name: "Salman Khan"
+    email: "myselfsalman2000@gmail.com"
+  onCallSupport:
+    -923322320191
+    -923102317148

@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+
+build:
+  version: "2.0"
+
+
+accounts:
+  message: "Welcome to EazyBank account related QA APIs"
+  contactDetails:
+    name: "Salman Khan -QA Lead"
+    email: "myselfsalman2000@gmail.com"
+  onCallSupport:
+    -923322320191
+    -923102317148
