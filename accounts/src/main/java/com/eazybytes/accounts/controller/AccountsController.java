@@ -33,8 +33,8 @@ public class AccountsController {
 
     private final iAccountsService accountsService;
 
-    @Value("${build.version}")
-    private String buildVersion;
+//    @Value("${build.version}")
+//    private String buildVersion;
     @Autowired
     private AccountsContactInfoDto accountsContactInfoDto;
 
@@ -173,30 +173,30 @@ public class AccountsController {
         }
     }
 
-    @Operation(
-            summary = "Get Build information",
-            description = "Get Build information that is deployed into account microservice"
-    )
-    @ApiResponses({
-            @ApiResponse(
-                    responseCode = "200",
-                    description = "HTTP Status OK"
-            ),
-            @ApiResponse(
-                    responseCode = "500",
-                    description = "HTTP Status Internal Server Error",
-                    content = @Content(
-                            schema = @Schema(implementation = ErrorResponseDto.class)
-                    )
-            )
-    }
-    )
-    @GetMapping("/build-info")
-    public ResponseEntity<String> getBuildInfo(){
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .body(buildVersion);
-    }
+//    @Operation(
+//            summary = "Get Build information",
+//            description = "Get Build information that is deployed into account microservice"
+//    )
+//    @ApiResponses({
+//            @ApiResponse(
+//                    responseCode = "200",
+//                    description = "HTTP Status OK"
+//            ),
+//            @ApiResponse(
+//                    responseCode = "500",
+//                    description = "HTTP Status Internal Server Error",
+//                    content = @Content(
+//                            schema = @Schema(implementation = ErrorResponseDto.class)
+//                    )
+//            )
+//    }
+//    )
+//    @GetMapping("/build-info")
+//    public ResponseEntity<String> getBuildInfo(){
+//        return ResponseEntity
+//                .status(HttpStatus.OK)
+//                .body(buildVersion);
+//    }
 
 
     @Operation(
