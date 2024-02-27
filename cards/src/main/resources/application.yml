@@ -21,16 +21,22 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"
 
-
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
   endpoint:
     shutdown:
       enabled: true
+    health:
+      probes:
+        enabled: true
   info:
     env:
       enabled: true
@@ -41,14 +47,21 @@ endpoints:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
   client:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
+
 info:
   app:
     name: "cards"
     description: "Eazy Bank Cards Application"
     version: "1.0.0"
+
+logging:
+  level:
+    com:
+      eazybytes:
+        cards: DEBUG
