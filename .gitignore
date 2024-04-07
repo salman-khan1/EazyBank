@@ -1,12 +1,14 @@
 HELP.md
 *target/
-!accounts/.mvn/wrapper/maven-wrapper.jar
-!loans/.mvn/wrapper/maven-wrapper.jar
-!cards/.mvn/wrapper/maven-wrapper.jar
-!accounts/*/src/main/**/target/
-!cards/*/src/test/**/target/
-!loans/*/src/test/**/target/
+./!accounts/.mvn/wrapper/maven-wrapper.jar
+./!loans/.mvn/wrapper/maven-wrapper.jar
+./!cards/.mvn/wrapper/maven-wrapper.jar
+./!accounts/*/src/main/**/target/
+./!cards/*/src/test/**/target/
+./!loans/*/src/test/**/target/
 
+*.mvn/wrapper/maven-wrapper.jar
+*/src/main/**/target/
 
 ### STS ###
 .apt_generated
@@ -18,6 +20,8 @@ HELP.md
 .sts4-cache
 
 ### IntelliJ IDEA ###
+./.idea
+./.gitignore
 .idea
 *.iws
 *.iml
