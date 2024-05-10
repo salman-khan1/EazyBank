@@ -1,4 +1,4 @@
-package com.eazybytes.message.Dto;
+package com.eazybytes.message.dto;
 
 /**
  * @param accountNumber
@@ -6,5 +6,5 @@ package com.eazybytes.message.Dto;
  * @param email
  * @param mobileNumber
  */
-public record AccountsMsgDto(Long accountNumber,String name, String email, String mobileNumber) {
+public record AccountsMsgDto(Long accountNumber, String name, String email, String mobileNumber) {
 }
